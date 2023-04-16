@@ -1,11 +1,10 @@
 import React from 'react'
 import './contact.css'
-import {MdEmail} from 'react-icons/md'
-import {RiMessengerLine} from 'react-icons/ri'
-import {BsWhatsapp} from 'react-icons/bs'
+import { MdEmail } from 'react-icons/md'
+import { RiMessengerLine } from 'react-icons/ri'
+import { BsWhatsapp } from 'react-icons/bs'
 
 const contact = () => {
-  
   return (
     <section id='contact'>
       <h5>get in touch</h5>
@@ -36,14 +35,14 @@ const contact = () => {
 
         </div>
         <form >
-          <input type="text" name="name"  placeholder='your full name'required/>
+          <input type="text" name="name" placeholder='your full name'required/>
           <input type="email" name="email" placeholder='your email'required />
           <textarea name="message" id="" cols="30" rows="7" placeholder='your email'required> </textarea>
           <button type="submit" className='btn btn-primary'>send message</button>
         </form>
 
       </div>
-     
+
     </section>
   )
 }

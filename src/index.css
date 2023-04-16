@@ -33,7 +33,6 @@ body {
   background:rgb(18, 26, 38);
   color: var(--color-white);
   line-height: 1.7;
-  /* background-image: url(../src/assets/bg-texture.png); */
 }
 .container {
   width: var(--container-width-lg); 

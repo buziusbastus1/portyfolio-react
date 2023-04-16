@@ -2,7 +2,6 @@ import React from 'react'
 import './portfolio.css'
 import IMG1 from '../../assets/portfolio1.jpg'
 import IMG2 from '../../assets/portfolio2.jpg'
-import IMG3 from '../../assets/portfolio3.jpg'
 
 const data = [
   {
@@ -35,7 +34,7 @@ const portfolio = () => {
                 <img src={image} alt={title} />
               </div>
               <h3>{title}</h3>
-              <div className="portfolio_item-cta">
+              <div className="portfolio_item-cta" style={{ justifyContent: 'left', gap: '10px', display: 'flex' }}>
                 <a href={github} className="btn" target='_blank' rel="noreferrer">github </a>
                 <a
                   href={demo}
