@@ -16,22 +16,9 @@
     overflow: hidden;
 }
 
-/* .portfolio__item-image :hover,
-.portfolio__item-image :focus {
-  background: rgb(205, 17, 17);
-  z-index: 9;
-
-} */
-
 .portfolio__item-image img {
   display: block;
   max-width: 100%;
-}
-
-.portfolio__item-image:hover img {
-  filter: grayscale(100%);
-  background-color: rgb(0, 0, 0);
-  z-index: 10;
 }
 
 .portfolio__item h3{
@@ -50,4 +37,3 @@
         gap: 1rem;
     }
 }
-
