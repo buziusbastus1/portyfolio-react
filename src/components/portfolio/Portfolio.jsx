@@ -36,11 +36,8 @@ const portfolio = () => {
               <h3>{title}</h3>
               <div className="portfolio_item-cta" style={{ justifyContent: 'left', gap: '10px', display: 'flex' }}>
                 <a href={github} className="btn" target='_blank' rel="noreferrer">github </a>
-                <a
-                  href={demo}
-                  target="blank"
-                  className="btn btn__primary"
-                > live demo</a>
+                <a href={demo}target="blank"className="btn btn__primary"> live demo</a>
+                <a href={demo}target="blank"className="btn btn__primary"> learn more</a>
               </div>
             </article>
           )
