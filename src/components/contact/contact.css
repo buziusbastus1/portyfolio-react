@@ -59,3 +59,17 @@ textarea {
             width: var(--container-vidth-sm);
         }
 }
+.email {
+    display:block;
+    cursor: pointer;
+  }
+.copy-message {
+          position: fixed;
+          top: 0;
+          left: 0;
+          right: 0;
+          background-color: var(--color-bg-variant);
+          color: white;
+          text-align: center;
+          padding: 10px;
+        }

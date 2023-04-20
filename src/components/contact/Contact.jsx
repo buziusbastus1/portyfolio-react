@@ -1,10 +1,20 @@
-import React from 'react'
-import './contact.css'
+import React, { useState } from 'react'
 import { MdEmail } from 'react-icons/md'
-import { RiMessengerLine } from 'react-icons/ri'
-import { BsWhatsapp } from 'react-icons/bs'
+import { FaGithub, FaLinkedin } from 'react-icons/fa'
+// import emailjs from 'emailjs-com'
+import './contact.css'
 
 const contact = () => {
+  const [isCopied, setIsCopied] = useState(false)
+
+  const copyToClipboard = () => {
+    const email = 'kubaotreba121@wp.pl'
+    navigator.clipboard.writeText(email)
+    setIsCopied(true)
+    setTimeout(() => {
+      setIsCopied(false)
+    }, 1500)
+  }
   return (
     <section id='contact'>
       <h5>get in touch</h5>
@@ -14,23 +24,29 @@ const contact = () => {
 
           <article className="contact__option ">
             <MdEmail className='contact__option-icon'/>
-            <h4>email</h4>
-            <h5>dumeyygat@gmail.com</h5>
-            <a href="mailto:kubaotreba121@wp.pl">send a message</a>
+            <h4>Email</h4>
+            <h5>kubaotreba121@wp.pl</h5>
+            <div> <a className="email" onClick={copyToClipboard}> copy to clipboard</a></div>
+            <a href="mailto:kubaotreba121@wp.pl">send an email</a>
+
+          </article>
+ {isCopied && (
+        <h2 className="copy-message">
+          Email copied to clipboard
+        </h2>
+ )}
+          <article className="contact__option">
+            <FaLinkedin className='contact__option-icon'/>
+            <h4>Linkedin</h4>
+            <h5>Jakub Otreba</h5>
+            <a href="https://www.linkedin.com/in/jakub-otreba337" target="_blank" rel="noreferrer">go to profile</a>
           </article>
 
           <article className="contact__option">
-            <RiMessengerLine className='contact__option-icon'/>
-            <h4>messenger</h4>
-            <h5>egatutorials</h5>
-            <a href="https://facebook.com">send a message</a>
-          </article>
-
-          <article className="contact__option">
-            <BsWhatsapp className='contact__option-icon'/>
-            <h4>whatsapp</h4>
-            <h5>23242534512</h5>
-            <a href="https://facebook.com">send a message</a>
+            <FaGithub className='contact__option-icon'/>
+            <h4>Github</h4>
+            <h5>buziusbastus1</h5>
+            <a href="https://github.com/buziusbastus1" target="_blank" rel="noreferrer">go to profile</a>
           </article>
 
         </div>
