@@ -11,7 +11,7 @@ const data = [
     title: 'crypto currency',
     github: 'http://github.com',
     demo: 'http://dribbble.com',
-    modalContent: 'Modal conten for chart templates',
+    modalContent: 'Modal conten for chart templatesModal conten for chart templatesModal conten for chart templatesModal conten for chart templatesModal conten for chart templatesModal conten for chart templates',
     modalImage: IMG1
   },
   {
@@ -29,10 +29,12 @@ const portfolio = () => {
 
   const openModal = (id) => {
     setActiveModal(id)
+    document.documentElement.style.overflow = 'hidden'
   }
 
   const closeModal = () => {
     setActiveModal(null)
+    document.documentElement.style.overflow = 'auto'
   }
   return (
     <section id="portfolio">
