@@ -8,7 +8,7 @@ const data = [
   {
     id: 1,
     image: IMG1,
-    title: 'crypto currency',
+    title: 'Grafika',
     github: 'http://github.com',
     demo: 'http://dribbble.com',
     modalContent: 'Modal conten for chart templatesModal conten for chart templatesModal conten for chart templatesModal conten for chart templatesModal conten for chart templatesModal conten for chart templates',
@@ -17,7 +17,7 @@ const data = [
   {
     id: 2,
     image: IMG2,
-    title: 'chart templates',
+    title: 'Guitar Display',
     github: 'http://github.com',
     demo: 'http://dribbble.com',
     modalContent: 'Modal conten for chart asda',

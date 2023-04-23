@@ -1,4 +1,4 @@
-.modal {
+/* .modal {
   position: fixed;
   z-index: 9999;
    top: 50%;
@@ -14,21 +14,22 @@
     overflow-y: auto;
     contain: content;
     display: flex;
-}
+} */
 
-.modal__content {
-  /* position: relative; */
-  /* display: flex; */
-   /* flex-wrap: nowrap;  */
+/* position: relative; */
+/* display: flex; */
+/* flex-wrap: nowrap;  */
+/* z-index: 10000; */
+
+/* .modal__content {
   flex-direction: column; 
-  /* z-index: 10000; */
 position: relative;
   padding: 20px;
   border-radius: 5px;
   align-items: center;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3); 
   
-}
+} */
 
 .modal__close {
   /* position: absolute;
@@ -43,12 +44,13 @@ position: relative;
 .modal__close:hover {
   color: red;
 }
+
 .modal__image-wrapper {
-  flex: 0 0 50%; 
+  flex: 0 0 50%;
 }
 
 .modal__image-wrapper img {
-  max-width: 100%; 
+  max-width: 100%;
 }
 
 /* .modhead {
@@ -61,37 +63,62 @@ position: relative;
   justify-content: space-between;
   display: flex;
   align-items: center;
-} */
+}  */
 
-/* .modal {
+.modal {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  /* height: 100%; */
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 9999;
-  overflow: auto;
+  /* max-height: 90vh; */
+  /* overflow-y: auto; */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  /* height: 100%;  */
+  background-color: rgb(34, 48, 68);
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  border-radius: 1em;
+  -webkit-mask-image: linear-gradient(to bottom, transparent, #000 0%);
+  mask-image: linear-gradient(to bottom, transparent, #000 0%);
 }
 
 .modhead {
-  position: fixed;
+  position: sticky;
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #fff;
+  background-color: var(--color-primary-variant);
   padding: 10px;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
   z-index: 10000;
+  padding: 1rem;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
 }
 
 .modal__content {
-  margin-top: 50px;
+  /* margin-top: 15vh; */
+  flex-direction: column;
+  position: relative;
   padding: 20px;
+  border-radius: 5px;
+  align-items: center;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+  overflow-y: auto;
+  display: flex;
+  max-height: calc(90vh - 60px);
 }
 
 .modal__image-wrapper {
-  display: flex;
   justify-content: center;
   margin-top: 20px;
 }
@@ -99,4 +126,14 @@ position: relative;
 .modal__image-wrapper img {
   max-width: 100%;
   height: auto;
-} */
+}
+
+.modal__background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9998;
+  backdrop-filter: blur(10px);
+}
