@@ -15,8 +15,9 @@ const Modal = ({ title, content, onClose, img }) => {
            <div className="modal__image-wrapper">
           <img src={img} alt={title} />
           <img src={img} alt={title} />
-             <p>{content}</p>
+          <img src={img} alt={title} />
         </div>
+             <p>{content}{content}{content}{content}{content}{content}{content}</p>
       </div>
     </div>
     </>

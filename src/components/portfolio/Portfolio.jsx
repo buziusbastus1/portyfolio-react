@@ -1,29 +1,8 @@
 import React, { useState } from 'react'
 import Modal from '../modals/Modals'
+import { data } from '../modals/ModalsData'
 import './portfolio.css'
-import IMG1 from '../../assets/portfolio1.jpg'
-import IMG2 from '../../assets/portfolio2.jpg'
 
-const data = [
-  {
-    id: 1,
-    image: IMG1,
-    title: 'Grafika',
-    github: 'http://github.com',
-    demo: 'http://dribbble.com',
-    modalContent: 'Modal conten for chart templatesModal conten for chart templatesModal conten for chart templatesModal conten for chart templatesModal conten for chart templatesModal conten for chart templates',
-    modalImage: IMG1
-  },
-  {
-    id: 2,
-    image: IMG2,
-    title: 'Guitar Display',
-    github: 'http://github.com',
-    demo: 'http://dribbble.com',
-    modalContent: 'Modal conten for chart asda',
-    modalImage: IMG2
-  }
-]
 const portfolio = () => {
   const [activeModal, setActiveModal] = useState(null)
 
