@@ -3,11 +3,13 @@ import IMG2 from '../../assets/portfolio2.jpg'
 import GRAF1 from '../../assets/modal/graf1.jpg'
 import GRAF2 from '../../assets/modal/graf2.jpg'
 import GRAF3 from '../../assets/modal/graf3.jpg'
-// import GUIT1 from '../../assets/modal/guit1.jpg'
-// import GUIT2 from '../../assets/modal/guit2.jpg'
-// import GUIT3 from '../../assets/modal/guit3.jpg'
-// import GUIT4 from '../../assets/modal/guit4.jpg'
+import GUIT1 from '../../assets/modal/guit1.jpg'
+import GUIT2 from '../../assets/modal/guit2.jpg'
+import GUIT3 from '../../assets/modal/guit3.jpg'
+import GUIT4 from '../../assets/modal/guit4.jpg'
 const graf = [GRAF1, GRAF2, GRAF3]
+const guit = [GUIT1, GUIT2, GUIT3, GUIT4]
+
 export const data = [
   {
     id: 1,
@@ -24,7 +26,7 @@ export const data = [
     title: 'Guitar Display',
     github: 'http://github.com',
     demo: 'http://dribbble.com',
-    modalContent: 'Modal conten for chart asda',
-    modalImage: IMG2
+    modalContent: 'Modal content for guitar display <a href="http://example.com">Link to example website</a>',
+    modalImage: guit
   }
 ]

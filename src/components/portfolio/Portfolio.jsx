@@ -45,7 +45,7 @@ const portfolio = () => {
         <Modal
           title={data[0].title}
           content={data[0].modalContent}
-          img={data[0].modalImage}
+          modalImage={data[0].modalImage}
           onClose={closeModal}
         />
       )}
@@ -55,7 +55,7 @@ const portfolio = () => {
         <Modal
           title={data[1].title}
           content={data[1].modalContent}
-          img={data[1].modalImage}
+          modalImage={data[1].modalImage}
           onClose={closeModal}
         />
       )}

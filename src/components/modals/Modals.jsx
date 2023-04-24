@@ -1,25 +1,46 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './modals.css'
-const Modal = ({ title, content, onClose, img }) => {
+const Modal = ({ title, content, onClose, modalImage }) => {
+  const [selectedImageIndex, setSelectedImageIndex] = useState(-1) // initially no image is selected
+
+  const handleImageClick = (index) => {
+    setSelectedImageIndex(index)
+  }
+
+  const handleImageClose = () => {
+    setSelectedImageIndex(-1) // reset the selected index to close the zoomed-in image
+  }
+
   return (
     <>
-    <div className="modal__background"></div>
-    <div className="modal">
+      <div className="modal__background"></div>
+      <div className="modal">
         <div className='modhead'>
-        <h3>{title}</h3>
-        <button className="modal__close" onClick={onClose}>&times;</button>
+          <h3>{title}</h3>
+          <button className="modal__close" onClick={onClose}>&times;</button>
         </div>
-      <div className="modal__content">
-        <p>{content}</p>
+        <div className="modal__content">
+          <p>{content}</p>
 
-           <div className="modal__image-wrapper">
-          <img src={img} alt={title} />
-          <img src={img} alt={title} />
-          <img src={img} alt={title} />
+          <div className="modal__image-wrapper">
+            {modalImage.map((image, index) => (
+              <img
+                key={index}
+                src={image}
+                alt={title}
+                onClick={() => handleImageClick(index)}
+                className={selectedImageIndex === index ? 'zoomed-in' : ''}
+              />
+            ))}
+          </div>
+          <p>{content}</p>
         </div>
-             <p>{content}{content}{content}{content}{content}{content}{content}</p>
+        {selectedImageIndex >= 0 && (
+          <div className="modal__zoomed-image-wrapper" onClick={handleImageClose}>
+            <img src={modalImage[selectedImageIndex]} alt={title} className="zoom" />
+          </div>
+        )}
       </div>
-    </div>
     </>
   )
 }
