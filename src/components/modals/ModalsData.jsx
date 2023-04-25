@@ -27,7 +27,7 @@ export const data = [
     title: 'Guitar Display',
     github: 'https://github.com/buziusbastus1/guitar-display',
     demo: 'https://guitar-display.vercel.app/',
-    modalContent: 'This is a React app built with ViteJS. The app displays my 3D glb model created in Blender(/public/models/) and uses ScrollControls and GSAP timeline to animate it. It also includes a subpage route where you can interact with the same model. <a href="http://example.com">Link to example website</a>',
+    modalContent: 'This is a React app built with ViteJS. The app displays my 3D glb model created in Blender(/public/models/) and uses ScrollControls and GSAP timeline to animate it. It also includes a subpage route where you can interact with the same model. <a href="https://www.youtube.com/@WawaSensei/about" target="_blank" rel="noreferrer">YouTube channel</a>',
     modalImage: guit
   }
 ]
