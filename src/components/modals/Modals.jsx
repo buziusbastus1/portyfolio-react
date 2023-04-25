@@ -16,12 +16,11 @@ const Modal = ({ title, content, onClose, modalImage }) => {
       <div className="modal__background"></div>
       <div className="modal">
         <div className='modhead'>
-          <h3>{title}</h3>
+          <h2>{title}</h2>
           <button className="modal__close" onClick={onClose}>&times;</button>
         </div>
         <div className="modal__content">
-          <p>{content}</p>
-
+          <h3>Screenshots</h3>
           <div className="modal__image-wrapper">
             {modalImage.map((image, index) => (
               <img
@@ -33,7 +32,9 @@ const Modal = ({ title, content, onClose, modalImage }) => {
               />
             ))}
           </div>
-          <p>{content}</p>
+          <h3>Description</h3>
+  <p className='desc' dangerouslySetInnerHTML={{ __html: content }}></p>
+
         </div>
         {selectedImageIndex >= 0 && (
           <div className="modal__zoomed-image-wrapper" onClick={handleImageClose}>
