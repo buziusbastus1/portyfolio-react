@@ -29,7 +29,7 @@ const portfolio = () => {
                 <img src={image} alt={title} />
               </div>
               <h3>{title}</h3>
-              <div className="portfolio_item-cta" style={{ justifyContent: 'left', gap: '10px', display: 'flex' }}>
+              <div className="portfolio_item-cta" >
                 <a href={github} className="btn" target='_blank' rel="noreferrer">github </a>
                 <a href={demo}target="blank"className="btn btn__primary"> live demo</a>
                  <a onClick={() => openModal(id)} className="btn btn__primary">
