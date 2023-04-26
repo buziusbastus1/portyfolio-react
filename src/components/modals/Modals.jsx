@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import './modals.css'
-const Modal = ({ title, content, onClose, modalImage }) => {
+const Modal = ({ title, content, technologies, onClose, modalImage }) => {
   const [selectedImageIndex, setSelectedImageIndex] = useState(-1) // initially no image is selected
 
   const handleImageClick = (index) => {
@@ -20,7 +20,8 @@ const Modal = ({ title, content, onClose, modalImage }) => {
           <button className="modal__close" onClick={onClose}>&times;</button>
         </div>
         <div className="modal__content">
-          <h3>Screenshots</h3>
+
+          <h3>📸 Screenshots</h3>
           <div className="modal__image-wrapper">
             {modalImage.map((image, index) => (
               <img
@@ -32,9 +33,10 @@ const Modal = ({ title, content, onClose, modalImage }) => {
               />
             ))}
           </div>
-          <h3>Description</h3>
+          <h3>📖 Description</h3>
   <p className='desc' dangerouslySetInnerHTML={{ __html: content }}></p>
-<h3>Technologies</h3>
+<h3>🖥️ Technologies</h3>
+ <ul className='list' dangerouslySetInnerHTML={{ __html: technologies }}></ul>
         </div>
         {selectedImageIndex >= 0 && (
           <div className="modal__zoomed-image-wrapper" onClick={handleImageClose}>

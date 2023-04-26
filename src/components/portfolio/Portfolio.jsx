@@ -46,6 +46,7 @@ const portfolio = () => {
           title={data[0].title}
           content={data[0].modalContent}
           modalImage={data[0].modalImage}
+          technologies={data[0].technologies}
           onClose={closeModal}
         />
       )}
@@ -56,6 +57,7 @@ const portfolio = () => {
           title={data[1].title}
           content={data[1].modalContent}
           modalImage={data[1].modalImage}
+          technologies={data[1].technologies}
           onClose={closeModal}
         />
       )}
