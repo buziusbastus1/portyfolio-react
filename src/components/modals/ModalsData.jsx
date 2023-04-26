@@ -27,7 +27,7 @@ export const data = [
     title: 'Guitar Display',
     github: 'https://github.com/buziusbastus1/guitar-display',
     demo: 'https://guitar-display.vercel.app/',
-    modalContent: 'This is a React app built with ViteJS. The app displays my 3D glb model created in Blender(/public/models/) and uses ScrollControls and GSAP timeline to animate it. It also includes a subpage route where you can interact with the same model. <a href="https://www.youtube.com/@WawaSensei/about" target="_blank" rel="noreferrer">YouTube channel</a>',
+    modalContent: 'This is a React app built with ViteJS. The app displays my 3D glb model created in Blender and uses <a href="https://github.com/pmndrs/drei#scrollcontrols" target="_blank" rel="noreferrer">ScrollControls</a> and GSAP timeline to animate model and user interface. It also includes a subpage route where you can interact with the same model. You can move around with <a href="https://threejs.org/docs/#examples/en/controls/OrbitControls" target="_blank" rel="noreferrer">OrbitControls</a>, click on different parts with camera foucus with <a href="https://github.com/pmndrs/drei#bounds" target="_blank" rel="noreferrer">Bounds</a> and display mesh name on hover near the cursor. I learned a lot at about react-three-fiber at Wawa Sensei <a href="https://www.youtube.com/@WawaSensei" target="_blank" rel="noreferrer">YouTube channel</a> and <a href="https://github.com/pmndrs/drei" target="_blank" rel="noreferrer">react-three/drei</a> doucumentation.',
     modalImage: guit
   }
 ]

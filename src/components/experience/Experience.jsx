@@ -48,7 +48,7 @@ const experience = () => {
           <article className="experience__details">
             <MdArrowForwardIos className='experience__details-icon'/>
             <div>
-              <h4>English</h4>
+              <h4>Blender</h4>
 
             </div>
           </article>

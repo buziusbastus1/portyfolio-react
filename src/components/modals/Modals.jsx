@@ -34,7 +34,7 @@ const Modal = ({ title, content, onClose, modalImage }) => {
           </div>
           <h3>Description</h3>
   <p className='desc' dangerouslySetInnerHTML={{ __html: content }}></p>
-
+<h3>Technologies</h3>
         </div>
         {selectedImageIndex >= 0 && (
           <div className="modal__zoomed-image-wrapper" onClick={handleImageClose}>
