@@ -1,7 +1,7 @@
-import React, { useState } from 'react'
+import React, { useState, useRef } from 'react'
 import { MdEmail } from 'react-icons/md'
 import { FaGithub, FaLinkedin } from 'react-icons/fa'
-// import emailjs from 'emailjs-com'
+import emailjs from '@emailjs/browser'
 import './contact.css'
 
 const contact = () => {
@@ -14,6 +14,20 @@ const contact = () => {
     setTimeout(() => {
       setIsCopied(false)
     }, 1500)
+  }
+
+  const form = useRef()
+
+  const sendEmail = (e) => {
+    e.preventDefault()
+    emailjs.sendForm('service_p4glurc', 'template_z4q7nzk', form.current, 'l1HA2UxqXtdFZQsjr')
+      .then((result) => {
+        console.log(result.text)
+        alert('Your message has been sent!')
+      }, (error) => {
+        console.log(error.text)
+        alert('Sorry, there was an error. Please try again later.')
+      })
   }
   return (
     <section id='contact'>
@@ -50,11 +64,11 @@ const contact = () => {
           </article>
 
         </div>
-        <form >
+        <form ref={form} onSubmit={sendEmail} id="contact-form" >
           <input type="text" name="name" placeholder='your full name'required/>
           <input type="email" name="email" placeholder='your email'required />
-          <textarea name="message" id="" cols="30" rows="7" placeholder='your email'required> </textarea>
-          <button type="submit" className='btn btn-primary'>send message</button>
+          <textarea name="message" id="" cols="30" rows="7" placeholder='your message' />
+          <button type="submit" className='btn btn-primary'value="Send">send message</button>
         </form>
 
       </div>
