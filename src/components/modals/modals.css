@@ -35,8 +35,8 @@
   align-items: center;
   display: flex;
   border-radius: 1em;
-  -webkit-mask-image: linear-gradient(to bottom, transparent, #000 0%);
-  mask-image: linear-gradient(to bottom, transparent, #000 0%);
+  -webkit-mask-image: linear-gradient(transparent, #000 0%);
+  mask-image: linear-gradient(transparent, #000 0%);
 }
 
 .modhead {
@@ -120,7 +120,7 @@
 
 .zoom {
   border-radius: 1em;
-  width: 95%;
+  /* width: 139%; */
 }
 
 .desc {
