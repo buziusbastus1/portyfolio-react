@@ -33,3 +33,13 @@ export const data = [
     technologies: '<li>Vite</li><li>SCSS</li><li>React</li><li>Three.js</li><li>React Three Fiber</li><li>GSAP</li><li>React Router</li>'
   }
 ]
+export const images = {
+  IMG1,
+  IMG2,
+  GRAF1,
+  GRAF2,
+  GRAF4,
+  GUIT1,
+  GUIT2,
+  GUIT3
+}
