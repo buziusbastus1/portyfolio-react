@@ -7,10 +7,6 @@ const Slider = () => {
   const imageKeys = Object.keys(images)
   const length = imageKeys.length
 
-  const handlePrev = () => {
-    setImageIndex((imageIndex - 1 + length) % length)
-  }
-
   const handleNext = () => {
     setImageIndex((imageIndex + 1) % length)
   }
@@ -28,16 +24,6 @@ const Slider = () => {
 
   return (
     <div className="header__slideshow">
-      <div className='slider__arrows' >
-      <div className="slider__prev" onClick={handlePrev}>
-        {length > 0 && (
-          <img
-            src={images[imageKeys[(imageIndex - 1 + length) % length]]}
-            alt="Previous Screenshot"
-            className="slider__image slider__image--prev"
-          />
-        )}
-      </div>
       <div className="slider__next" onClick={handleNext}>
         {length > 0 && (
           <img
@@ -46,7 +32,6 @@ const Slider = () => {
             className="slider__image slider__image--next"
           />
         )}
-      </div>
       </div>
       {length > 0 && (
         <img
