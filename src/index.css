@@ -12,9 +12,9 @@
 
 :root {
   --color-bg: #1f1f38;
-  --color-bg-variant: #6e6b2f;
-  --color-primary: #C6CA53;
-  --color-primary-variant: #88893b;
+  --color-bg-variant: #273853;
+  --color-primary: #dee25f;
+  --color-primary-variant: #3b5170;
   --color-white: #fff;
   --color-light: rgba(255, 255, 255, 0.6);
   --transition: all 400ms ease;
