@@ -46,3 +46,25 @@
         gap: 1rem;
     }
 }
+
+.portfolio__item.even {
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+.portfolio__item.odd {
+    opacity: 0;
+    transform: translateX(50px);
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+.portfolio__item.even.fade-in {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.portfolio__item.odd.fade-in {
+    opacity: 1;
+    transform: translateX(0);
+}
