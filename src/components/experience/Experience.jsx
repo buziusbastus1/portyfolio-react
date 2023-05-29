@@ -1,14 +1,48 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
 import './experience.css'
 import { MdArrowForwardIos } from 'react-icons/md'
 const experience = () => {
+  const frontendRef = useRef(null)
+  const backendRef = useRef(null)
+  const titleRef = useRef(null)
+
+  useEffect(() => {
+    const options = {
+      threshold: 0.3
+    }
+
+    const observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('fade-in')
+          observer.unobserve(entry.target)
+        }
+      })
+    }, options)
+
+    if (frontendRef.current) {
+      observer.observe(frontendRef.current)
+    }
+
+    if (backendRef.current) {
+      observer.observe(backendRef.current)
+    }
+    if (titleRef.current) {
+      observer.observe(titleRef.current)
+    }
+
+    return () => {
+      observer.disconnect()
+    }
+  }, [])
   return (
     <section id="experience">
-      <h5>what skills i have</h5>
-      <h2>my experience</h2>
-
+       <div className="experience__titles" ref={titleRef}>
+      <h5 ref={titleRef}>what skills i have</h5>
+      <h2 ref={titleRef}>my experience</h2>
+</div>
       <div className="container experience__container">
-        <div className="experience__frontend">
+        <div ref={frontendRef} className="experience__frontend">
           <h3>Skills</h3>
           <div className="experience__content">
             <article className="experience__details">
@@ -54,7 +88,7 @@ const experience = () => {
           </article>
         </div>
 </div>
-        <div className="experience__backend">
+        <div ref={backendRef} className="experience__backend">
           <h3>Used Libraries</h3>
           <div className="experience__content">
             <article className="experience__details">
