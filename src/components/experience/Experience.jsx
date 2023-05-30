@@ -1,7 +1,8 @@
 import React, { useEffect, useRef } from 'react'
-import './experience.css'
 import { MdArrowForwardIos } from 'react-icons/md/'
 import observeIntersection from '../../intersectionObserver'
+import './experience.css'
+
 const experience = () => {
   const frontendRef = useRef(null)
   const backendRef = useRef(null)

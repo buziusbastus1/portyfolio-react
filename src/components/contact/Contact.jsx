@@ -1,7 +1,8 @@
-import React, { useState, useRef } from 'react'
+import React, { useState, useRef, useEffect } from 'react'
 import { MdEmail } from 'react-icons/md'
 import { FaGithub, FaLinkedin } from 'react-icons/fa'
 import emailjs from '@emailjs/browser'
+import observeIntersection from '../../intersectionObserver'
 import './contact.css'
 
 const contact = () => {
@@ -17,6 +18,21 @@ const contact = () => {
   }
 
   const form = useRef()
+  const cop = useRef(null)
+
+  useEffect(() => {
+    const options = {
+      threshold: 0.3
+    }
+
+    const contactObserver = observeIntersection(cop, options)
+    const formObserver = observeIntersection(form, options)
+
+    return () => {
+      contactObserver.disconnect()
+      formObserver.disconnect()
+    }
+  }, [])
 
   const sendEmail = (e) => {
     e.preventDefault()
@@ -29,13 +45,14 @@ const contact = () => {
         alert('Sorry, there was an error. Please try again later.')
       })
   }
+
   return (
     <section id='contact'>
       <h5>get in touch</h5>
       <h2>contact me</h2>
       <div className="container contact__container">
-        <div className="contact__options">
-
+        <div ref={cop} className="contact__options">
+{/* {console.log(cop)} */}
           <article className="contact__option ">
             <MdEmail className='contact__option-icon'/>
             <h4>Email</h4>
@@ -62,9 +79,10 @@ const contact = () => {
             <h5>buziusbastus1</h5>
             <a href="https://github.com/buziusbastus1" target="_blank" rel="noreferrer">go to profile</a>
           </article>
-
         </div>
-        <form ref={form} onSubmit={sendEmail} id="contact-form" >
+
+        <form ref={form} onSubmit={sendEmail} id="contact-form" className='form'>
+          {/* {console.log(form)} */}
           <input type="text" name="name" placeholder='your full name'required/>
           <input type="email" name="email" placeholder='your email'required />
           <textarea name="message" id="" cols="30" rows="7" placeholder='your message' required />

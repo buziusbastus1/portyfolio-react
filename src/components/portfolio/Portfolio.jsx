@@ -1,8 +1,8 @@
 import React, { useState, useRef, useEffect } from 'react'
 import Modal from '../modals/Modals'
 import { data } from '../modals/ModalsData'
-import './portfolio.css'
 import observeIntersection from '../../intersectionObserver'
+import './portfolio.css'
 
 const portfolio = () => {
   const [activeModal, setActiveModal] = useState(null)
