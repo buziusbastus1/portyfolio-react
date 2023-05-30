@@ -23,10 +23,6 @@ const footer = () => {
     <footer>
         <ul className='permalinks'>
 
-        {/* <li><a href="#">home</a></li>
-        <li><a href="#experience">experience</a></li>
-        <li><a href="#portfolio">portfolio</a></li>
-        <li><a href="#contact">contact</a></li> */}
          <li ref={(el) => (fadeRefs.current[0] = el)}>
           <a href="#">home</a>
         </li>
