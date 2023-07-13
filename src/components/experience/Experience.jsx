@@ -38,7 +38,7 @@ const experience = () => {
             <article className="experience__details">
               <MdArrowForwardIos className='experience__details-icon'/>
               <div>
-                <h4>React</h4>
+                <h4>TypeScript</h4>
 
               </div>
             </article>
@@ -51,7 +51,7 @@ const experience = () => {
           <article className="experience__details">
             <MdArrowForwardIos className='experience__details-icon'/>
             <div>
-              <h4>RWD</h4>
+              <h4>React.js</h4>
 
             </div>
           </article>
@@ -65,7 +65,7 @@ const experience = () => {
           <article className="experience__details">
             <MdArrowForwardIos className='experience__details-icon'/>
             <div>
-              <h4>Blender</h4>
+              <h4>RWD</h4>
 
             </div>
           </article>
@@ -77,13 +77,6 @@ const experience = () => {
             <article className="experience__details">
               <MdArrowForwardIos className='experience__details-icon' />
               <div>
-                <h4>GSAP</h4>
-
-              </div>
-            </article>
-            <article className="experience__details">
-              <MdArrowForwardIos className='experience__details-icon'/>
-              <div>
                 <h4>Three.js</h4>
 
               </div>
@@ -91,21 +84,35 @@ const experience = () => {
             <article className="experience__details">
               <MdArrowForwardIos className='experience__details-icon'/>
               <div>
-                <h4>React Router</h4>
+                <h4>Next.js</h4>
 
               </div>
             </article>
             <article className="experience__details">
               <MdArrowForwardIos className='experience__details-icon'/>
               <div>
-                <h4>Vitejs</h4>
+                <h4>GSAP</h4>
 
               </div>
             </article>
             <article className="experience__details">
               <MdArrowForwardIos className='experience__details-icon'/>
               <div>
-                <h4>EmailJS</h4>
+                <h4>MongoDB</h4>
+
+              </div>
+            </article>
+            <article className="experience__details">
+              <MdArrowForwardIos className='experience__details-icon'/>
+              <div>
+                <h4>Tailwind</h4>
+
+              </div>
+            </article>
+            <article className="experience__details">
+              <MdArrowForwardIos className='experience__details-icon'/>
+              <div>
+                <h4>Prisma</h4>
 
               </div>
             </article>

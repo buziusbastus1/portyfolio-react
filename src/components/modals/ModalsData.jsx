@@ -8,8 +8,14 @@ import GUIT1 from '../../assets/modal/guit1.jpg'
 import GUIT2 from '../../assets/modal/guit2.jpg'
 import GUIT3 from '../../assets/modal/guit3.jpg'
 import GUIT4 from '../../assets/modal/guit4.jpg'
+import HOT1 from '../../assets/modal/hot1.jpg'
+import HOT2 from '../../assets/modal/hot2.jpg'
+import HOT3 from '../../assets/modal/hot3.jpg'
+import HOT4 from '../../assets/modal/hot4.jpg'
+import HOT5 from '../../assets/modal/hot5.jpg'
 const graf = [GRAF1, GRAF2, GRAF3, GRAF4]
 const guit = [GUIT1, GUIT2, GUIT3, GUIT4]
+const hot = [HOT1, HOT2, HOT3, HOT4, HOT5]
 
 export const data = [
   {
@@ -30,7 +36,17 @@ export const data = [
     demo: 'https://guitar-display.vercel.app/',
     modalContent: 'This is a React app built with ViteJS. The app displays my 3D glb model created in Blender which uses <a href="https://github.com/pmndrs/drei#scrollcontrols" target="_blank" rel="noreferrer">ScrollControls</a> and GSAP timeline to animate model and user interface. It also includes a subpage route where you can interact with the same model. You can move around with <a href="https://threejs.org/docs/#examples/en/controls/OrbitControls" target="_blank" rel="noreferrer">OrbitControls</a>, click on different parts with camera foucus with <a href="https://github.com/pmndrs/drei#bounds" target="_blank" rel="noreferrer">Bounds</a>, display mesh name on hover near the cursor and change mesh material color.<p> I learned a lot at about react-three-fiber at Wawa Sensei <a href="https://www.youtube.com/@WawaSensei" target="_blank" rel="noreferrer">YouTube channel</a> and <a href="https://github.com/pmndrs/drei" target="_blank" rel="noreferrer">react-three/drei</a> doucumentation.</p>',
     modalImage: guit,
-    technologies: '<li>Vite</li><li>SCSS</li><li>React</li><li>Three.js</li><li>React Three Fiber</li><li>GSAP</li><li>React Router</li>'
+    technologies: '<li>Vite</li><li>SCSS</li><li>React.js</li><li>Three.js</li><li>React Three Fiber</li><li>GSAP</li><li>React Router</li>'
+  },
+  {
+    id: 3,
+    image: HOT1,
+    title: 'Hotel Reservation',
+    github: 'https://github.com/buziusbastus1/hotel-reservation',
+    demo: 'https://hotel-reservation-buziusbastus1.vercel.app/',
+    modalContent: 'This is a React app built with ViteJS. The app displays my 3D glb model created in Blender which uses <a href="https://github.com/pmndrs/drei#scrollcontrols" target="_blank" rel="noreferrer">ScrollControls</a> and GSAP timeline to animate model and user interface. It also includes a subpage route where you can interact with the same model. You can move around with <a href="https://threejs.org/docs/#examples/en/controls/OrbitControls" target="_blank" rel="noreferrer">OrbitControls</a>, click on different parts with camera foucus with <a href="https://github.com/pmndrs/drei#bounds" target="_blank" rel="noreferrer">Bounds</a>, display mesh name on hover near the cursor and change mesh material color.<p> I learned a lot at about react-three-fiber at Wawa Sensei <a href="https://www.youtube.com/@WawaSensei" target="_blank" rel="noreferrer">YouTube channel</a> and <a href="https://github.com/pmndrs/drei" target="_blank" rel="noreferrer">react-three/drei</a> doucumentation.</p>',
+    modalImage: hot,
+    technologies: '<li>Next.js</li><li>TypeScript</li><li>React.js</li><li>Prisma</li><li>MongoDB</li><li>Tailwind</li><li>Axios</li><li>Zustand</li>'
   }
 ]
 export const images = {
@@ -41,5 +57,10 @@ export const images = {
   GRAF4,
   GUIT1,
   GUIT2,
-  GUIT3
+  GUIT3,
+  HOT1,
+  HOT2,
+  HOT3,
+  HOT4,
+  HOT5
 }

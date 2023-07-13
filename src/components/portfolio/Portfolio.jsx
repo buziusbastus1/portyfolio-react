@@ -34,6 +34,18 @@ const portfolio = () => {
       }
     })
   }, [])
+  const renderModal = (item) => {
+    return (
+      <Modal
+        key={item.id}
+        title={item.title}
+        content={item.modalContent}
+        modalImage={item.modalImage}
+        technologies={item.technologies}
+        onClose={closeModal}
+      />
+    )
+  }
   return (
     <section id="portfolio">
       <h5>my recent work</h5>
@@ -50,7 +62,6 @@ const portfolio = () => {
           return (
             <article
             key={id}
-            // className="portfolio__item"
              className={articleClassName}
             ref={ref}>
 
@@ -69,28 +80,9 @@ const portfolio = () => {
           )
         })}
       </div>
-           {/* Modal 1 */}
-      {activeModal === 1 && (
-        <Modal
-          title={data[0].title}
-          content={data[0].modalContent}
-          modalImage={data[0].modalImage}
-          technologies={data[0].technologies}
-          onClose={closeModal}
-        />
-      )}
 
-      {/* Modal 2 */}
-      {activeModal === 2 && (
-        <Modal
-          title={data[1].title}
-          content={data[1].modalContent}
-          modalImage={data[1].modalImage}
-          technologies={data[1].technologies}
-          onClose={closeModal}
-        />
-      )}
-
+      {/* Render modals */}
+      {activeModal !== null && renderModal(data.find((item) => item.id === activeModal))}
     </section>
   )
 }
