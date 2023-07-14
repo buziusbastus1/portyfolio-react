@@ -20,13 +20,13 @@ const hot = [HOT1, HOT2, HOT3, HOT4, HOT5]
 export const data = [
   {
     id: 1,
-    image: IMG1,
-    title: 'Grafika',
-    github: 'https://github.com/buziusbastus1/grafika',
-    demo: 'https://buziusbastus1.github.io/grafika/',
-    modalContent: '<p>This was my first website uploaded to a github. The course posted on a freecodecamp.org YouTube channel named <a href="https://youtu.be/3PHXvlpOkf4conten" target="_blank" rel="noreferrer">Build 15 JavaScript Projects - Vanilla JavaScript Course</a> inspired my to build my own website.<p>It contains buttons appearing on hover or click on touch-screen devices. Two buttons open up text container in the same place which you can close. The other buttons open up the modals with filtering of images and ability to click on them in order to zoom and swipe them with the <a href="https://photoswipe.com/" target="_blank" rel="noreferrer">PhotoSwipe</a>.</p>',
-    modalImage: graf,
-    technologies: '<li>Vanilla JS</li><li>HTML</li><li>SCSS</li><li>RWD</li><li>PhotoSwipe</li>'
+    image: HOT1,
+    title: 'Hotel Reservation',
+    github: 'https://github.com/buziusbastus1/hotel-reservation',
+    demo: 'https://hotel-reservation-buziusbastus1.vercel.app/',
+    modalContent: 'I have developed a Next.js hotel rental app that allows users to register and login. The app utilizes React Hook Form for form validation and Prisma to store data, including passwords, reservations, favorites and hotel listing in MongoDB. To interact with the server, I utilized Axios for operations on the API endpoint. The entire application is styled using Tailwind.I have integrated TanStack Query, which provides suggestions while searching for titles, locations and categories.',
+    modalImage: hot,
+    technologies: '<li>Next.js</li><li>TypeScript</li><li>React.js</li><li>Prisma</li><li>MongoDB</li><li>Tailwind</li><li>Axios</li><li>Zustand</li><li>React Hook Form</li><li>TanStack Query</li>'
   },
   {
     id: 2,
@@ -40,13 +40,13 @@ export const data = [
   },
   {
     id: 3,
-    image: HOT1,
-    title: 'Hotel Reservation',
-    github: 'https://github.com/buziusbastus1/hotel-reservation',
-    demo: 'https://hotel-reservation-buziusbastus1.vercel.app/',
-    modalContent: 'This is a React app built with ViteJS. The app displays my 3D glb model created in Blender which uses <a href="https://github.com/pmndrs/drei#scrollcontrols" target="_blank" rel="noreferrer">ScrollControls</a> and GSAP timeline to animate model and user interface. It also includes a subpage route where you can interact with the same model. You can move around with <a href="https://threejs.org/docs/#examples/en/controls/OrbitControls" target="_blank" rel="noreferrer">OrbitControls</a>, click on different parts with camera foucus with <a href="https://github.com/pmndrs/drei#bounds" target="_blank" rel="noreferrer">Bounds</a>, display mesh name on hover near the cursor and change mesh material color.<p> I learned a lot at about react-three-fiber at Wawa Sensei <a href="https://www.youtube.com/@WawaSensei" target="_blank" rel="noreferrer">YouTube channel</a> and <a href="https://github.com/pmndrs/drei" target="_blank" rel="noreferrer">react-three/drei</a> doucumentation.</p>',
-    modalImage: hot,
-    technologies: '<li>Next.js</li><li>TypeScript</li><li>React.js</li><li>Prisma</li><li>MongoDB</li><li>Tailwind</li><li>Axios</li><li>Zustand</li>'
+    image: IMG1,
+    title: 'Grafika',
+    github: 'https://github.com/buziusbastus1/grafika',
+    demo: 'https://buziusbastus1.github.io/grafika/',
+    modalContent: '<p>This was my first website uploaded to a github. The course posted on a freecodecamp.org YouTube channel named <a href="https://youtu.be/3PHXvlpOkf4conten" target="_blank" rel="noreferrer">Build 15 JavaScript Projects - Vanilla JavaScript Course</a> inspired my to build my own website.<p>It contains buttons appearing on hover or click on touch-screen devices. Two buttons open up text container in the same place which you can close. The other buttons open up the modals with filtering of images and ability to click on them in order to zoom and swipe them with the <a href="https://photoswipe.com/" target="_blank" rel="noreferrer">PhotoSwipe</a>.</p>',
+    modalImage: graf,
+    technologies: '<li>Vanilla JS</li><li>HTML</li><li>SCSS</li><li>RWD</li><li>PhotoSwipe</li>'
   }
 ]
 export const images = {
