@@ -48,6 +48,12 @@ const contact = () => {
 
   return (
     <section id='contact'>
+
+ {isCopied && (
+        <h2 className="copy-message">
+          Email copied to clipboard
+        </h2>
+ )}
       <h5>get in touch</h5>
       <h2>contact me</h2>
       <div className="container contact__container">
@@ -61,11 +67,6 @@ const contact = () => {
             <a href="mailto:kubaotreba121@wp.pl">send an email</a>
 
           </article>
- {isCopied && (
-        <h2 className="copy-message">
-          Email copied to clipboard
-        </h2>
- )}
           <article className="contact__option">
             <FaLinkedin className='contact__option-icon'/>
             <h4>Linkedin</h4>
