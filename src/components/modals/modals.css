@@ -36,9 +36,6 @@
   align-items: center;
   display: flex;
   border-radius: 0.5em;
-  /* -webkit-mask-image: linear-gradient(transparent, #000 0%);
-  mask-image: linear-gradient(transparent, #000 0%); */
-  /* overflow: auto */
 }
 
 .modhead {
